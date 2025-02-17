@@ -177,7 +177,9 @@
                             allowing you to download mods directly from the Nexus.
                             <br>
                             <div class="card-red">
-                                <p>Limo is currently in <strong>active development</strong> and as such, major functionality may be subject to change at any time. Because of this, be aware that <strong>No support whatsoever</strong> can be offered at this time.</p>
+                                <p>Limo is currently in <strong>active development</strong> and as such, major
+                                    functionality may be subject to change at any time. Because of this, be aware that
+                                    <strong>No support whatsoever</strong> can be offered at this time.</p>
                             </div>
                             <div class="card-yellow">
                                 <p>
@@ -203,7 +205,7 @@
                 <div class="card" id="WhyLimo" title="Why Limo?">
                     <p>
                     <h3>Why Limo?</h3>
-                    Limo has been chosen for our guides due to its <strong>ease of use</strong> and its ability to keep
+                    Limo has been chosen for this guide due to its <strong>ease of use</strong> and its ability to keep
                     the <strong>game's folder clean</strong>. This is important because it allows for easy conflict
                     resolution and mod management, and makes correcting mistakes trivial - installed mods in the wrong
                     order? Just drag them into the correct position!
@@ -262,16 +264,16 @@
                         <ol>
                             <li>Select <strong>Import from Steam</strong></li>
                             <li>Select <strong>Fallout New Vegas</strong></li>
-                            <li>Select a staging directory of your choosing. <strong>This will be where mod downloads
-                                    and management will occur</strong></li>
+                            <li>Select a staging directory of your choosing. <strong>This will be where mod management
+                                    and downloads occur</strong></li>
                             <li>Navigate to the <strong>Deployers</strong> tab</li>
                         </ol>
                     </div>
 
-                    <div class="expander-top colors-steam clickable width-90"
+                    <!-- <div class="expander-top colors-steam clickable width-90"
                     onclick="expandCard(this, limoSetupHeroicExpander)" id="limoSetupHeroic">
                     <p>
-                    <h3>Steam</h3>
+                    <h3>GOG & Epic Games</h3>
                     <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
                         alt="UI element - Chevron">
                     </p>
@@ -283,7 +285,7 @@
                                 and management will occur</strong></li>
                         <li>Navigate to the <strong>Deployers</strong> tab</li>
                     </ol>
-                </div>
+                </div> -->
                     </p>
                 </div>
 
@@ -291,28 +293,25 @@
                     <p>
                     <h3>Configuring Settings</h3>
                     <ol>
-                        <li>Click the <b>X</b> in the bottom right of MO2 to close the log window.</li>
                         <li>Click the <img class="mo2-icon" src="./img/MO2/Settings.webp" alt="MO2 settings"> button at
-                            the top of MO2 to open the settings.</li>
-                        <li>If you wish, you can select a different theme.</li>
-                        <li>In the <b>Nexus</b> tab, select <strong>Connect to Nexus</strong>.</li>
-                        <div class="image-container">
+                            the top right corner of Limo to open the settings.</li>
+                        <li>In the <b>NexusMods</b> tab, select <strong>Set API key</strong>.</li>
+                        <li>Open <a
+                                href="https://next.nexusmods.com/settings/api-keys#:~:text=Request%20Api%20Key-,Mod%20Organizer%202,-Mod%20Organizer%202"
+                                target="_blank">this link</a> to retrieve your Mod Organizer 2 API key. This key will
+                            also work with Limo.</li>
+                        <!-- <div class="image-container">
                             <img class="content-img" src="./img/MO2/Connect.webp" alt="Connect to Nexus">
                             <div class="resize-overlay expand"></div>
-                        </div>
-                    </ol>
+                        </div> -->
+                        <!-- </ol>
 
-                    <div class="card-green">
-                        <p>
-                            This option will not show up if you have already connected your Nexus account on a different
-                            MO2 instance.
-                        </p>
-                    </div>
-
-                    <ol start="5">
-                        <li>MO2 will open your browser and prompt you to <strong>authorize</strong> the connection.</li>
-                        <li>Once you authorize it, you can close your browser and of the MO2 settings.</li>
-                        <li>Allow MO2 to <strong>restart</strong>.</li>
+                    <ol start="5"> -->
+                        <li>Select the Copy icon to retrieve your MO2 API key</li>
+                        <li>Returning to Limo, select <strong>Set API Key</strong>, then paste your key into the field
+                        </li>
+                        <li>Optionally, you can set a custom decryption password. This can help prevent your credentials
+                            from being stolen.</li>
                     </ol>
                     </p>
                 </div>
@@ -321,12 +320,13 @@
                     <p>
                     <h3>Game Settings</h3>
                     <ol>
-                        <li>Open the game launcher using the <strong>Fallout Launcher</strong> option in MO2.</li>
-                        <div class="image-container width-60">
+                        <li>Open the game launcher by pressing the <strong>Launch Application</strong> option in the
+                            top-left corner</li>
+                        <!-- <div class="image-container width-60">
                             <img class="content-img" src="./img/Others/Start Launcher.webp"
                                 alt="Run the launcher through MO2">
                             <div class="resize-overlay expand"></div>
-                        </div>
+                        </div> -->
                         <li>
                             Inside the launcher, click <b>Options</b> and do the following:
                             <ol>
@@ -340,31 +340,6 @@
                                         </p>
                                     </div>
 
-                                </li>
-                                <li>
-                                    Set <strong>Resolution</strong> to your monitor's native resolution.
-
-                                    <div class="card-yellow">
-                                        <p>
-                                            If you can't find the right resolution in the launcher's list, do the
-                                            following:
-                                        <ol>
-                                            <li>Close the launcher.</li>
-                                            <li>Click the <img class="mo2-icon" src="./img/MO2/INI Editor.webp"
-                                                    alt="MO2 INI button"> button at the top of MO2 and select
-                                                <strong>INI Editor</strong>.
-                                            </li>
-                                            <li>Select the <strong>FalloutPrefs.ini</strong> tab.</li>
-                                            <li>Change the following settings in the <span
-                                                    class="card-basic">Display</span> section:
-                                                <br>
-                                                <span class="card-basic">iSize W</span> = your screen width
-                                                <br>
-                                                <span class="card-basic">iSize H</span> = your screen height
-                                            </li>
-                                        </ol>
-                                        </p>
-                                    </div>
                                 </li>
                             </ol>
                         <li>Close the launcher.</li>
@@ -397,26 +372,36 @@
                     </div>
                     <br>
                     <br>
+
                     <strong>Standard procedure</strong> through the manager:
                     <ol>
                         <li>Download the indicated file(s).</li>
-                        <li>Open the <b>Downloads</b> tab in MO2 (below the executable selector on the right).</li>
-                        <li>Double-click on the mod to install it.</li>
-                        <li>Enable the mod on the left pane by ticking its checkbox.</li>
+                        <li>Wait for the <strong>Install Mod</strong> dialogue to pop up</li>
+                        <li>Click <strong>OK</strong> to install it.</li>
                     </ol>
                     <br>
                     If downloading through the manager is not an option, do the following:
                     <ol>
                         <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for
                             the respective site).</li>
-                        <li>Once the download has finished, click the <img class="mo2-icon"
-                                src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2.
+                        <li>Once the download has finished, drag the downloaded file into Limo
                         </li>
-                        <li>From the new window, navigate to where the file was downloaded to and double-click it.</li>
+                        <li>Wait for the <strong>Install Mod</strong> dialogue to pop up. This may take a while for
+                            larger mods.</li>
                         <li>Finish the install as you would with a <b>Mod Manager Download</b> mod.</li>
                     </ol>
+
+                    <div class="card-yellow">
+                        <p>
+                            <strong>Add to deployer</strong> will appear in the bottom right corner of <b>every</b> mod
+                            installation. You must make sure that you are always adding mods to the
+                            <strong>Data</strong> deployer. This can be done by checking the box marked
+                            <strong>Data</strong> if it is not already.</li>
+                        </p>
+                    </div>
+
                     <br>
-                    When <strong>installing a mod</strong>, MO2 might prompt you with multiple choices:
+                    When <strong>installing a mod</strong>, Limo might prompt you with multiple choices:
                     <ul>
                         <li><strong>Rename</strong> appears when you are trying to install a file with the same name as
                             an existing one. If you are installing, for example, a secondary file necessary for the mod

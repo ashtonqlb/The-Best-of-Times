@@ -200,17 +200,19 @@
                             <li>Open Steam and go to your <strong>Library</strong>.</li>
                             <li>Find <strong>Fallout 3</strong> in the list.</li>
                             <li>Right-click on it and select <strong>Manage</strong> -> <strong>Uninstall</strong>.</li>
+                            <li>Navigate to <span class="card-basic">~/.local/share/Steam/steamapps/compatdata/</span>
+                                and delete the folder named <span class="card-basic">22370</span></li>
                         </ol>
                     </div>
 
-                    <div class="expander-top colors-gog clickable width-90"
+                    <!-- <div class="expander-top colors-gog clickable width-90"
                         onclick="expandCard(this, uninstallHeroicExpander)" id="uninstallHeroic">
                         <p>
                         <h3>GOG & Epic Games</h3>
                         <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
                             alt="UI element - Chevron">
                         </p>
-                    </div>
+                    </div> -->
 
                     <div class="expander-bottom colors-gog width-90" id="uninstallHeroicExpander">
                         <h3>Fallout: New Vegas</h3>
@@ -245,19 +247,62 @@
                         Heroic Games Launcher</strong>. Steam versions, obviously, can be installed with Steam.
                     <br><br>You do not need to install multiple copies of the game if you have it on multiple platforms
 
-                    <h3>Fallout: New Vegas</h3>
-                    <ol>
-                        <li>Open Steam or Heroic Games Launcher (for GOG, Epic) and go to your <strong>Library</strong>.
-                        </li>
-                        <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.
-                        </li>
-                    </ol>
-                    <h3>Fallout 3</h3>
-                    <ol>
-                        <li>Open Steam or Heroic Games Launcher (for GOG, Epic) and go to your <strong>Library</strong>.
-                        </li>
-                        <li>Find <strong>Fallout 3</strong> in the list and select <strong>Install</strong>.</li>
-                    </ol>
+                    <div class="expander-top colors-gog clickable width-90"
+                        onclick="expandCard(this, installSteamExpander)" id="installSteam">
+                        <div>
+                            <p>
+                            <h3>Steam</h3>
+                            </p>
+                        </div>
+                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
+                            alt="UI element - Chevron">
+                    </div>
+
+                    <div class="expander-bottom colors-steam width-90" id="installSteamExpander">
+                        <h3>Fallout: New Vegas</h3>
+                        <ol>
+                            <li>Open Steam and go to your <strong>Library</strong>.</li>
+                            <li>Find <strong>Fallout: New Vegas</strong> in the list and select
+                                <strong>Install</strong>.</li>
+                            <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
+                        </ol>
+                        <h3>Fallout 3</h3>
+                        <ol>
+                            <li>Open Steam and go to your <strong>Library</strong>.</li>
+                            <li>Find <strong>Fallout 3</strong> in the list and select <strong>Install</strong>.</li>
+                            <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
+                        </ol>
+                    </div>
+
+                    <!-- <div class="expander-top colors-gog clickable width-90"
+                        onclick="expandCard(this, installHeroicExpander)" id="installHeroic">
+                        <div>
+                            <p>
+                            <h3>GOG & Epic Games</h3>
+                            </p>
+                        </div>
+                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
+                            alt="UI element - Chevron">
+                    </div>
+
+                    <div class="expander-bottom colors-gog width-90" id="installHeroicExpander">
+
+                        <h3>Fallout: New Vegas</h3>
+                        <ol>
+                            <li>Open Heroic Games Launcher and go to your <strong>Library</strong>.</li>
+                            <li>Find <strong>Fallout: New Vegas</strong> in the list and select
+                                <strong>Install</strong>.</li>
+                            <li>Check the box marked <strong>install all DLCs</strong></li>
+                            <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
+                        </ol>
+                        <h3>Fallout 3</h3>
+                        <ol>
+                            <li>Open Heroic Games Launcher and go to your <strong>Library</strong>.</li>
+                            <li>Find <strong>Fallout 3</strong> in the list and select <strong>Install</strong>.</li>
+                            <li>Check the box marked <strong>install all DLCs</strong></li>
+                            <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
+                        </ol>
+                    </div> -->
                     </p>
                 </div>
             </span>
@@ -268,7 +313,7 @@
                 <div class="card" id="Terminology">
                     <p>
                     <h3>Key Terminology</h3>
-                    Now that the game is installed, there are two folders from it that will be referred to in the guide
+                    Now that the game is installed, there are <strong>three</strong> folders from it that will be referred to in the guide
                     often:
                     <ul>
                         <li><strong>Root</strong> folder: Where the game is installed.</li>
@@ -278,11 +323,16 @@
                                     <p>~/.local/share/Steam/steamapps/common/Fallout New Vegas/</p>
                                 </div>
                             </li>
-                            <li>For GOG & Epic Games:
+                            <!-- <li>For GOG:
                                 <div class="card-basic">
-                                    <p>~/Games/Fallout New Vegas</p>
+                                    <p>~/Games/Heroic/Fallout New Vegas/</p>
                                 </div> (unless you manually changed the installation path).
                             </li>
+                            <li>For Epic Games:
+                                <div class="card-basic">
+                                    <p>~/Games/Heroic/FalloutNewVegas/</p>
+                                </div> (unless you manually changed the installation path).
+                            </li> -->
                         </ul>
                     </ul>
 
@@ -294,11 +344,16 @@
                                     <p>~/.local/share/Steam/steamapps/common/Fallout New Vegas/Data</p>
                                 </div>
                             </li>
-                            <li>For GOG & Epic Games:
+                            <!-- <li>For GOG:
                                 <div class="card-basic">
-                                    <p>~/Games/Fallout New Vegas/Data</p>
+                                    <p>~/Games/Heroic/Fallout New Vegas/Data</p>
                                 </div>
                             </li>
+                            <li>For Epic Games:
+                                <div class="card-basic">
+                                    <p>~/Games/Heroic/FalloutNewVegas/Fallout New Vegas English/Data</p>
+                                </div>
+                            </li> -->
                         </ul>
                     </ul>
 
@@ -306,52 +361,19 @@
                         <li><strong>Prefix</strong> folder: Where all of the game's configuration & Windows
                             compatibility files are located.</li>
                         <ul>
-                            <li>For Steam: <br><br>
-                                Fallout New Vegas: <div class="card-basic">
-                                    <p>~/.local/share/Steam/steamapps/compatdata/22380/</p>
-                                </div>
-                                Fallout 3: <div class="card-basic">
-                                    <p>~/.local/share/Steam/steamapps/compatdata/22370/</p>
-                                </div>
+                            <li>For Steam:<br>
+                                <div class="card-basic">
+                                    <p>~/.local/share/Steam/steamapps/compatdata/22380/pfx</p>
                             </li>
-                            <li>For GOG & Epic Games: <br><br>
+                            <!-- <li>For GOG & Epic Games: <br><br>
                                 Fallout New Vegas: <div class="card-basic">
                                     <p>~/Games/Heroic/Prefixes/default/Fallout New Vegas</p>
                                 </div> (unless you manually changed the prefix path).
-                                <br><br>Fallout 3: <div class="card-basic">
-                                    <p>~/Games/Heroic/Prefixes/default/Fallout 3</p>
-                                </div> (unless you manually changed the prefix path).
-                            </li>
+                            </li> -->
                         </ul>
                     </ul>
                     </p>
                 </div>
-                <div class="card" id="GeneratingINIs" title="Generating INIs">
-                    <p>
-                    <h3>Generating Fresh INI Files</h3>
-                    <h3>Fallout: New Vegas</h3>
-                    <ol>
-                        <li>Run the game from Steam/Heroic Games Launcher</li>
-                        <li>Click OK to both pop-ups that say <b>Detecting Video Hardware</b>.</li>
-                        <ul>
-                            <li>If there aren't any pop-ups, delete your <strong>Prefix folder</strong>, then retry.
-                            </li>
-                        </ul>
-                        <li>Click <b>OK</b> then <b>Exit</b>.</li>
-                    </ol>
-                    <h3>Fallout 3</h3>
-                    <ol>
-                        <li>Run the game from Steam/Heroic Games Launcher</li>
-                        <li>Click OK to both pop-ups that say <b>Detecting Video Hardware</b>.</li>
-                        <ul>
-                            <li>If there aren't any pop-ups, delete your <strong>Prefix folder</strong>, then retry.
-                            </li>
-                        </ul>
-                        <li>Exit the launcher.</li>
-                    </ol>
-                    </p>
-                </div>
-
                 <div class="card" id="InstallVCRun" title="Installing Components">
                     <p>
                     <h3>Installing Components</h3>
@@ -380,28 +402,30 @@
                                 select <strong>OK</strong>.</li>
                             <li>Proceed with installing Visual C++ as prompted. <strong>If prompted, feel free to ignore
                                     any SHA-1 hash warnings.</strong></li>
-                            <li>Once installation has been completed, exit the program by clicking <strong>Cancel.</strong>
+                            <li>Once installation has been completed, exit the program by clicking
+                                <strong>Cancel.</strong>
                             </li>
                         </ol>
                     </div>
 
-                    <div class="expander-top colors-gog clickable width-90"
+                    <!-- <div class="expander-top colors-gog clickable width-90"
                         onclick="expandCard(this, installVCRunHeroicGOGExpander)" id="installVCRunHeroicGOG">
                         <p>
                         <h3>GOG</h3>
                         <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg"
                             alt="UI element - Chevron">
                         </p>
-                    </div>
+                    </div> -->
 
-                    <div class="expander-bottom colors-gog width-90" id="installVCRunHeroicGOGExpander">
+                    <!-- <div class="expander-bottom colors-gog width-90" id="installVCRunHeroicGOGExpander">
                         <h3>Installing Visual C++</h3>
                         <ol>
                             <li>Open Heroic Games Launcher and go to your <strong>Library</strong>.</li>
                             <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
                             <li>Right-click on it and select <strong>Settings -> Winetricks</strong>.</li>
                             <li>Type <span class="card-basic">vcrun2022</span> into the search bar and click
-                                <strong>Install</strong></li>
+                                <strong>Install</strong>
+                            </li>
                             <li>Wait for <span class="card-basic">vcrun2022</span> to appear in the <strong>Installed
                                     components</strong> list, then exit.</li>
                         </ol>
@@ -418,17 +442,22 @@
 
                     <div class="expander-bottom colors-gog width-90" id="installVCRunHeroicEpicExpander">
                         <h3>Downgrading Fallout: New Vegas</h3>
-                        <p>The Epic Games version is different to the Steam version, as it ships with a myriad of compiler optimisations. <br><br>Unfortunately, the vast majority of mods, including the ones used in this guide, do not support the latest version. Playing Tale of Two Wastelands requires that you downgrade your game to the latest Steam release. </p>
+                        <p>The Epic Games version is different to the Steam version, as it ships with a myriad of
+                            compiler optimisations. <br><br>Unfortunately, the vast majority of mods, including the ones
+                            used in this guide, do not support the latest version. Playing Tale of Two Wastelands
+                            requires that you downgrade your game to the latest Steam release. </p>
                         <ol>
                             <li>Install <a href="https://flathub.org/apps/io.github.marco_calautti.DeltaPatcher"
-                                target="_blank">Delta Patcher</a> from the Discover store.</li> 
-                            <li>Download and unzip the <a href="https://www.nexusmods.com/newvegas/mods/81281?tab=files"target="_blank"></a>Epic Games Patcher</a> into a folder of your choosing.
-                                </li>                           
+                                    target="_blank">Delta Patcher</a> from the Discover store.</li>
+                            <li>Download and unzip the <a href="https://www.nexusmods.com/newvegas/mods/81281?tab=files"
+                                    target="_blank"></a>Epic Games Patcher</a> into a folder of your choosing.
+                            </li>
                             <li>Open Delta Patcher</li>
-                                <ul>
-                                    <li>Select your game's <strong>FalloutNV.exe</strong> as the target file</li>
-                                    <li>Select <strong>patch.xdelta</strong> from wherever you unpacked Epic Games Patcher as the XDelta Patch</li>
-                                </ul>
+                            <ul>
+                                <li>Select your game's <strong>FalloutNV.exe</strong> as the target file</li>
+                                <li>Select <strong>patch.xdelta</strong> from wherever you unpacked Epic Games Patcher
+                                    as the XDelta Patch</li>
+                            </ul>
                             <li>Click <strong>Apply patch</strong></li>
                         </ol>
                         <h3>Installing Visual C++</h3>
@@ -437,14 +466,39 @@
                             <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
                             <li>Right-click on it and select <strong>Settings -> Winetricks</strong>.</li>
                             <li>Type <span class="card-basic">vcrun2022</span> into the search bar and click
-                                <strong>Install</strong></li>
+                                <strong>Install</strong>
+                            </li>
                             <li>Wait for <span class="card-basic">vcrun2022</span> to appear in the <strong>Installed
                                     components</strong> list, then exit.</li>
                         </ol>
-                    </div>
+                    </div> -->
                     </p>
                 </div>
-
+                <div class="card" id="GeneratingINIs" title="Generating INIs">
+                    <p>
+                    <h3>Generating Fresh INI Files</h3>
+                    <h3>Fallout: New Vegas</h3>
+                    <ol>
+                        <li>Run the game from Steam/Heroic Games Launcher</li>
+                        <li>Click OK to both pop-ups that say <b>Detecting Video Hardware</b>.</li>
+                        <ul>
+                            <li>If there aren't any pop-ups, delete your <strong>Prefix folder</strong>, then retry.
+                            </li>
+                        </ul>
+                        <li>Click <b>OK</b> then <b>Exit</b>.</li>
+                    </ol>
+                    <h3>Fallout 3</h3>
+                    <ol>
+                        <li>Run the game from Steam/Heroic Games Launcher</li>
+                        <li>Click OK to both pop-ups that say <b>Detecting Video Hardware</b>.</li>
+                        <ul>
+                            <li>If there aren't any pop-ups, delete your <strong>Prefix folder</strong>, then retry.
+                            </li>
+                        </ul>
+                        <li>Exit the launcher.</li>
+                    </ol>
+                    </p>
+                </div>
             </span>
 
             <div class="navigationArrowContainer">
