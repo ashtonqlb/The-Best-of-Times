@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/Coco/Head Logo.webp">
 
-    <title>Mod Organizer 2 | The Best of Times</title>
+    <title>Mod Organizer 2 | The Best of Times - Mirelurked</title>
 
     <meta name="keywords" content="
     Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
@@ -66,13 +66,11 @@
                 <img src="./img/UI/Navigation.svg" id="navButton">
             </div>
             <div class="headerTitle">
-                <img src="./img/Coco/Head Logo.webp" alt="Logo" id="logo">
-                <a href="./index.html" id="headerTitle">The Best of Times</a>
+                <img src="./img/Crab/Head Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Mirelurked - The Best of Times</a>
             </div>
             <div class="guideLinks" id="headerLinks">
-                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
-                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim SE</a>
+                <a href="https://ashtonqlb.github.io/mirelurked-vnv/" target="_blank" rel="nofollow">Fallout: New Vegas</a>
             </div>
         </div>
         <div class="sidebar left-sidebar">
@@ -97,42 +95,8 @@
                     Tale of Two Wastelands
                 </a>
 
-                <a href="./essentials.html" title="Essential Mods">
-                    Essential Mods
-                </a>
-
-                <a href="./finish.html" title="Final Steps">
-                    Final Steps
-                </a>
-            </p>
-            <hr>
-            <p>
-                <a href="./changelog.html" title="TBoT Changelog">
-                    TBoT Changelog
-                </a>
-
-                <a href="./files/TTW Changelog.7z" target="_blank" title="TTW Changelog">
-                    TTW Changelog
-                </a>
-
-                <a href="https://vivanewvegas.moddinglinked.com/resources.html" target="_blank" title="Resources">
-                    Resources
-                </a>
-
-                <a href="./faq.html" title="FAQ">
-                    FAQ
-                </a>
-
-                <a href="https://vivanewvegas.moddinglinked.com/avoid-tools.html" target="_blank" title="Tools to Avoid">
-                    Tools to Avoid
-                </a>
-
-                <a href="https://vivanewvegas.moddinglinked.com/avoid-mods.html" target="_blank" title="Mods to Avoid">
-                    Mods to Avoid
-                </a>
-
-                <a href="./fo3.html" title="FO3 Mod Guide">
-                    FO3 Mod Guide
+                <a href="./finish.html" title="Base Finish">
+                    Base Finish
                 </a>
             </p>
             <p class="sidebar-padder"></p>
@@ -141,24 +105,10 @@
                 <a href="https://discord.gg/S99Ary5eba" title="Discord">
                     Discord
                 </a>
-                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
-                    Donate
-                </a>
                 <a href="https://github.com/ModdingLinked/The-Best-of-Times" title="GitHub">
                     GitHub
                 </a>
             </p>
-        </div>
-
-        <div class="card popup" id="donation">
-            <ul>
-                <li>
-                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
-                </li>
-                <li>
-                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
-                </li>
-            </ul>
         </div>
 
         <div class="content">
@@ -169,10 +119,13 @@
                 <div class="card" id="WhatIsMO2" title="What is MO2?">
                     <p>
                     <h3>What is Mod Organizer 2?</h3>
-                    Mod Organizer 2 (MO2) is an open source game mod manager, mainly used for Bethesda games. Its main features are:
+                    Mod Organizer 2 (MO2) is an open source game mod manager, mainly used for Bethesda games. Its main
+                    features are:
                     <ul>
                         <li>
-                            <strong>Virtual Filesystem (USVFS)</strong>: MO2 does not install mods directly into the game's folder, but rather creates a virtual filesystem that the game reads from. This allows for:
+                            <strong>Virtual Filesystem (USVFS)</strong>: MO2 does not install mods directly into the
+                            game's folder, but rather creates a virtual filesystem that the game reads from. This allows
+                            for:
                             <ul>
                                 <li>Safe mod installation and uninstallation,</li>
                                 <li>Being able to modify mod install order at any point,</li>
@@ -183,34 +136,51 @@
                             <ul>
                                 <li>Mods installed through MO2 are "visible" only to programs launched using MO2,</li>
                                 <li>Some programs may not work properly with MO2's virtual filesystem,</li>
-                                <li>USVFS can cause performance overhead if you have tons of loose (not-BSA/BA2) files,</li>
-                                <li>USVFS works by "hooking" into the game (similarly to mods such as NVSE plugins, ReShade, etc.). This method can be considered as unsafe by some antivirus software due to its memory-invasive nature.</li>
+                                <li>USVFS can cause performance overhead if you have tons of loose (not-BSA/BA2) files,
+                                </li>
+                                <li>USVFS works by "hooking" into the game (similarly to mods such as NVSE plugins,
+                                    ReShade, etc.). This method can be considered as unsafe by some antivirus software
+                                    due to its memory-invasive nature.</li>
                             </ul>
                         </li>
                         <li>
-                            <strong>Profile System</strong>: MO2 allows you to create multiple profiles with different mod setups, saves, and settings.
+                            <strong>Profile System</strong>: MO2 allows you to create multiple profiles with different
+                            mod setups, saves, and settings.
                         </li>
                         <li>
-                            <strong>Two pane interface</strong>: MO2 is split into two sides, the left side is the modlist and the right side is the plugin list. This allows for easy conflict resolution and mod management.
+                            <strong>Two pane interface</strong>: MO2 is split into two sides, the left side is the
+                            modlist and the right side is the plugin list. This allows for easy conflict resolution and
+                            mod management.
                         </li>
                         <li>
-                            <strong>Portability</strong>: Thanks to the use of USVFS, MO2 has a "portable" mode that allows you to move the entire MO2 folder to another location with minimal setup.
+                            <strong>Portability</strong>: Thanks to the use of USVFS, MO2 has a "portable" mode that
+                            allows you to move the entire MO2 folder to another location with minimal setup.
                         </li>
                         <li>
-                            <strong>Modding Community Integration</strong>: MO2 has built-in support for Nexus Mods, allowing you to download mods directly from the Nexus.
+                            <strong>Modding Community Integration</strong>: MO2 has built-in support for Nexus Mods,
+                            allowing you to download mods directly from the Nexus.
                             <br>
-                            It also has a plugin system that allows for creation of custom plugins to extend its functionality.
-
+                            It also has a plugin system that allows for creation of custom plugins to extend its
+                            functionality.
                             <div class="card-yellow">
                                 <p>
-                                    Mod Organizer 2 has <b>NO</b> support for Nexus' Collections feature, so you will have to download mods one by one.
+                                    Mod Organizer 2 has <b>NO</b> support for Nexus' Collections feature, so you will
+                                    have to download mods one by one.
                                     <br>
-                                    This is not a big issue, as the guide will provide direct links to the mods you need, and most collections are low quality and not curated.
+                                    This is not a big issue, as the guide will provide direct links to the mods you
+                                    need, and most collections are low quality and not curated.
                                     <hr>
-                                    The closest alternative to Collections is <a href="https://www.wabbajack.org/">Wabbajack</a>, which is a community-made modlist installer that can install entire modlists with a single click. Due to its higher bar of entry for modlist creators, Wabbajack lists tend to be of higher quality compared to Collections.
+                                    The closest alternative to Collections is <a
+                                        href="https://www.wabbajack.org/">Wabbajack</a>, which is a community-made
+                                    modlist installer that can install entire modlists with a single click. Due to its
+                                    higher bar of entry for modlist creators, Wabbajack lists tend to be of higher
+                                    quality compared to Collections.
+                                    <br>
+                                    <br>
+                                    You can find all instructions on how to install the official Viva New Vegas
+                                    Wabbajack list on Linux <a href="./wabbajack.html" target="_blank">here</a>.
                                 </p>
                             </div>
-
                         </li>
                     </ul>
                     </p>
@@ -219,68 +189,77 @@
                 <div class="card" id="WhyMO2" title="Why MO2?">
                     <p>
                     <h3>Why Mod Organizer 2?</h3>
-                    Mod Organizer 2 has been chosen for our guides due to its <strong>ease of use</strong> and its ability to keep the <strong>game's folder clean</strong>. This is important because it allows for easy conflict resolution and mod management, and makes correcting mistakes trivial - installed mods in the wrong order? Just drag them into the correct position!
+                    Mod Organizer 2 has been chosen for our guides due to its <strong>ease of use</strong> and its
+                    ability to keep the <strong>game's folder clean</strong>. This is important because it allows for
+                    easy conflict resolution and mod management, and makes correcting mistakes trivial - installed mods
+                    in the wrong order? Just drag them into the correct position!
                     <br>
                     <br>
-                    Compared to Vortex, MO2 doesn't hide the most important parts of modding from the user, making it easier to understand what is happening and why, albeit at the cost of potentially looking scary at first.
+                    Compared to Vortex, MO2 doesn't hide the most important parts of modding from the user, making it
+                    easier to understand what is happening and why, albeit at the cost of potentially looking scary at
+                    first.
                     <br>
                     <br>
-                    That said, we are well aware that MO2 is not perfect, and it has its own set of issues and limitations, but it is the best tool for the job.
+                    That said, we are well aware that MO2 is not perfect, and it has its own set of issues and
+                    limitations, but it is the best tool for the job.
                     </p>
                 </div>
             </span>
 
             <span id="Installation" class="section">
                 <h2 onclick="location.href='#Installation'">Installation</h2>
+                <div class="card" id="MO2Preinstall" title="Prepare Installer">
+                    <h3>Prepare Installer</h3>
+                    <p>
+                        Mod Organizer 2, being Windows software, does not come with a friendly Linux installation
+                        utility. We will need to download an <i>installer</i> program, which will automate all of the
+                        required setup.
+                        <br><br>
+                        To download the MO2 installer you must do the following
+                    </p>
+                    <ol>
+                        <li><a href="https://github.com/Furglitch/modorganizer2-linux-installer/releases/latest">Click
+                                here</a> to be taken to the download page for the latest MO2 installer</li>
+                        <li>Download the file marked <span class="card-basic">mo2installer.tar.gz</span>. This is an
+                            archive that contains all the necessary files.</li>
+                        <li>Extract the archive in a location you will remember. I recommend doing so in your
+                            <strong>Downloads</strong> folder. You will not need to keep these files after installation
+                            is complete.</li>
+                    </ol>
+                    </p>
+                </div>
 
                 <div class="card" id="InstallingMO2" title="Installing MO2">
                     <p>
                     <h3>Installing Mod Organizer 2</h3>
+                    Now that you have downloaded the latest MO2 installer, you may now begin the installation process.
                     <ol>
-                        <li><strong>Download Mod Organizer 2</strong> from <a href="https://www.nexusmods.com/site/mods/874" target="_blank">here</a>.</li>
-                        <li>Once the download has finished, run the installer.</li>
-                        <li>Accept the license, click <b>Next</b>.</li>
-                        <li>
-                            When asked about the install location, change <span class="card-basic">MO2</span> to <span class="card-basic">The Best of Times</span> and click <b>Next</b>.
-                            <br>
-                            <div class="image-container width-40">
-                                <img class="content-img" src="img/MO2/Install Path.webp" alt="Change folder name to The Best of Times">
-                                <div class="resize-overlay expand"></div>
-                            </div>
-
-                            <div class="card-green">
-                                <p>
-                                    If you wish to install Mod Organizer 2 in a different location, you can do so by clicking the <b>Browse</b> button and selecting a different folder.
-                                    <br>
-                                    <br>
-                                    The folder <u>MUST</u> be outside of the default Windows folders (such as <span class="card-basic">Program Files x86</span>) and outside of the game's <b>Root</b> folder.
-                                    <br>
-                                    <br>
-                                    It's discouraged to store MO2 on Desktop or Documents if you use OneDrive or similar cloud providers, due to potential issues and degraded performance.
-                                </p>
-                            </div>
-
+                        <li>Open the extracted <span class="card-basic">mo2installer-furglitch</span> folder.</li>
+                        <div class="card-yellow">
+                            <p>
+                                <b>I get the error "Operation Canceled. Check the terminal for details"</b>
+                            </p>
+                            <p>
+                                If the install script is giving you an error, You can run it from the Konsole to see the errors. To do so:
+                                <ol>
+                                    <li>Navigate back to the window where you have opened the <span class="card-basic">mo2installer-furglitch</span> folder.</li>
+                                    <li>Press <strong>Alt + Shift + F4</strong>. This will open a Konsole window in the MO2 installer folder. Konsole is the SteamOS 3 terminal</li>
+                                    <li>Type in <span class="card-basic">./install.sh</span> And then press the <strong>Enter</strong> key on your keyboard. This will then show you the error you are receiving when attempting the install process. You may follow the instructions on screen to resolve the error. </li>
+                                </ol>
+                            </p>
+                        </div>
+                        <li>Double click on the file marked <span class="card-basic">install.sh</span>.</li>
+                        <li>When prompted, scroll down the list and select <strong>Fallout New Vegas</strong>.</li>
+                        <li>When prompted to archive your prefix, click "No". <strong>Otherwise</strong> click "Yes"
                         </li>
-                        <li>On the install components page, use defaults.</li>
-                        <li>
-                            When asked about the Start Menu folder, change <span class="card-basic">Mod Organizer</span> to <span class="card-basic">The Best of Times</span> and click <b>Next</b>.
-                            <br>
-                            <div class="image-container width-40">
-                                <img class="content-img" src="img/MO2/Start Menu.webp" alt="Change the name to The Best of Times">
-                                <div class="resize-overlay expand"></div>
-                            </div>
-                        </li>
-                        <li>Don't create a Desktop shortcut - we will create our own later.</li>
-                        <li>On the final page, click <b>Install</b>.</li>
-                        <li>Once the installation is complete, ensure that <strong>Launch Mod Organizer</strong> is ticked and click <b>Finish</b>.</li>
+                        <li>Follow the on-screen instructions to create a clean Fallout New Vegas prefix, then click
+                            "All done. let's continue".</li>
+                        <li>Select where you would like to install Mod Organizer 2. I strongly recommend the
+                            <strong>default</strong> installation location
+                        <li>Wait for MO2 to be downloaded and installed.</li>
                     </ol>
-
-                    <div class="card-red">
-                        <p>
-                            MO2 refuses to open? Try <a href="https://vivanewvegas.moddinglinked.com/faq.html#troubleshootingquestion15">these steps</a> in the FAQ.
-                        </p>
-                    </div>
-
+                    Once installation is complete, MO2 will automatically launch when you open Fallout New Vegas from
+                    Steam.
                     </p>
                 </div>
             </span>
@@ -292,23 +271,26 @@
                     <p>
                     <h3>Configuring Mod Organizer 2</h3>
                     <ol>
-                        <li>On the instance creation page, select <strong>Create a portable instance</strong>, click <b>Next</b>.</li>
-                        <div class="image-container width-40">
-                            <img class="content-img" src="./img/MO2/Instance.webp" alt="Select Portable Instance option">
-                            <div class="resize-overlay expand"></div>
-                        </div>
-                        <li>Select <strong>Tale of Two Wastelands</strong> and click <b>Next</b>.</li>
-                        <li>Select the store where you bought the game, click <b>Next</b>.</li>
-                        <li>When asked about profile settings, <strong>enable all options</strong> and click <b>Next</b>.</li>
+                        <li>On the instance creation page, select <strong>Create a portable instance</strong>, click
+                            <b>Next</b>.
+                        </li>
+                        <li>Select <strong>Tale of Two Wastelands</strong>, click <b>Next</b>.</li>
+                        <li>Select <strong>Steam</strong>, click <b>Next</b>.</li>
+                        <li>When asked about profile settings, <strong>enable all options</strong> and click
+                            <b>Next</b>.
+                        </li>
                         <li>Keep the <strong>default location</strong> file path.</li>
                         <li>Click <strong>Connect to Nexus</strong>.</li>
                     </ol>
 
                     <div class="card-yellow">
                         <p>
-                            If you have MO2 installed on an SSD or a HDD with little space, you can check the <strong>Show advanced options</strong> box and change the <strong>Downloads</strong> file path to a different drive with more space.
+                            If you have MO2 installed on your device's internal storage, you can check the
+                            <strong>Show advanced options</strong> box and change the <strong>Downloads</strong> file
+                            path to a different drive, such as a microSD card with more space available.
                             <br>
-                            This will not affect the game's performance, the downloaded files can be deleted after the mods have been installed.
+                            This will not affect the game's performance, the downloaded files can be deleted after the
+                            mods have been installed.
                         </p>
                     </div>
 
@@ -316,18 +298,20 @@
                         <li>On the last page, select <b>Finish</b>.</li>
                         <li>If you see a pop-up called <strong>Show tutorial?</strong>, select <b>No</b>.</li>
                         <li>If you see a pop-up called <strong>Register?</strong>, select <b>Yes</b>.</li>
-                        <li>If you see a pop-up called <strong>INI file is read-only</strong>, select <b>Remember my choice</b> from the drop-down at the bottom then click <b>Clear the read-only flag</b>.</li>
-                        <li>If you see a pop-up called <strong>FalloutNV_lang.esp was found</strong>, select <b>Yes</b>.</li>
+                        <li>If you see a pop-up called <strong>INI file is read-only</strong>, select <b>Remember my
+                                choice</b> from the drop-down at the bottom then click <b>Clear the read-only flag</b>.
+                        </li>
                     </ol>
                     </p>
                 </div>
 
                 <div class="card" id="MO2Settings" title="MO2 Settings">
                     <p>
-                    <h3>Configuring Settings</h3>
+                    <h3>Configuring MO2 Settings</h3>
                     <ol>
                         <li>Click the <b>X</b> in the bottom right of MO2 to close the log window.</li>
-                        <li>Click the <img class="mo2-icon" src="./img/MO2/Settings.webp" alt="MO2 settings"> button at the top of MO2 to open the settings.</li>
+                        <li>Click the <img class="mo2-icon" src="./img/MO2/Settings.webp" alt="MO2 settings"> button at
+                            the top of MO2 to open the settings.</li>
                         <li>If you wish, you can select a different theme.</li>
                         <li>In the <b>Nexus</b> tab, select <strong>Connect to Nexus</strong>.</li>
                         <div class="image-container">
@@ -335,13 +319,10 @@
                             <div class="resize-overlay expand"></div>
                         </div>
                     </ol>
-
                     <div class="card-green">
-                        <p>
-                            This option will not show up if you have already connected your Nexus account on a different MO2 instance.
-                        </p>
+                        <p>This option will not show up if you have already connected your Nexus account on a different
+                            MO2 instance.</p>
                     </div>
-
                     <ol start="5">
                         <li>MO2 will open your browser and prompt you to <strong>authorize</strong> the connection.</li>
                         <li>Once you authorize it, you can close your browser and of the MO2 settings.</li>
@@ -349,14 +330,14 @@
                     </ol>
                     </p>
                 </div>
-
                 <div class="card" id="GameSettings">
                     <p>
                     <h3>Game Settings</h3>
                     <ol>
                         <li>Open the game launcher using the <strong>Fallout Launcher</strong> option in MO2.</li>
                         <div class="image-container width-60">
-                            <img class="content-img" src="./img/Others/Start Launcher.webp" alt="Run the launcher through MO2">
+                            <img class="content-img" src="./img/Others/Start Launcher.webp"
+                                alt="Run the launcher through MO2">
                             <div class="resize-overlay expand"></div>
                         </div>
                         <li>
@@ -364,29 +345,33 @@
                             <ol>
                                 <li>
                                     Select the <strong>Ultra Preset</strong>.
-
                                     <div class="card-yellow">
                                         <p>
-                                            If you have a very weak PC, you can select the <b>Medium Preset</b> instead.
+                                            If you would prefer battery life over graphical fidelity, you can select the
+                                            <b>Medium
+                                                Preset</b> instead.
                                         </p>
                                     </div>
-
                                 </li>
                                 <li>
-                                    Set <strong>Resolution</strong> to your monitor's native resolution.
-
+                                    Set <strong>Resolution</strong> to your handheld device's native resolution.
                                     <div class="card-yellow">
                                         <p>
-                                            If you can't find the right resolution in the launcher's list, do the following:
+                                            If you can't find the right resolution in the launcher's list, do the
+                                            following:
                                         <ol>
                                             <li>Close the launcher.</li>
-                                            <li>Click the <img class="mo2-icon" src="./img/MO2/Tools.webp" alt="Tools drop-down"> button at the top of MO2 and select <strong>INI Editor</strong>.</li>
+                                            <li>Click the <img class="mo2-icon" src="./img/MO2/INI Ei ditor.webp"
+                                                    alt="MO2 INI button"> button at the top of MO2 and select
+                                                <strong>INI Editor</strong>.
+                                            </li>
                                             <li>Select the <strong>FalloutPrefs.ini</strong> tab.</li>
-                                            <li>Change the following settings in the <span class="card-basic">Display</span> section:
+                                            <li>Change the following settings in the <span
+                                                    class="card-basic">Display</span> section:
                                                 <br>
-                                                <span class="card-basic">iSize W</span> = your screen width
+                                                <span class="card-basic">iSize W</span> = your screen width (in pixels)
                                                 <br>
-                                                <span class="card-basic">iSize H</span> = your screen height
+                                                <span class="card-basic">iSize H</span> = your screen height (in pixels)
                                             </li>
                                         </ol>
                                         </p>
@@ -406,7 +391,8 @@
                 <div class="card" id="HowToUse?">
                     <p>
                     <h3>How to use Nexus and MO2?</h3>
-                    When the guide says to install a mod, it will be formatted as <strong>Main File - Example 1.5</strong>, this is referring to the mod's category on Nexus and file name.
+                    When the guide says to install a mod, it will be formatted as <strong>Main File - Example
+                        1.5</strong>, this is referring to the mod's category on Nexus and file name.
 
                     <div class="card-yellow">
                         <p>
@@ -432,17 +418,28 @@
                     <br>
                     If downloading through the manager is not an option, do the following:
                     <ol>
-                        <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for the respective site).</li>
-                        <li>Once the download has finished, click the <img class="mo2-icon" src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2.</li>
+                        <li>Click the <strong>Manual Download</strong> button (or whatever the download button is for
+                            the respective site).</li>
+                        <li>Once the download has finished, click the <img class="mo2-icon"
+                                src="./img/MO2/Install Archive.webp" alt="MO2 archive button"> button at the top of MO2.
+                        </li>
                         <li>From the new window, navigate to where the file was downloaded to and double-click it.</li>
                         <li>Finish the install as you would with a <b>Mod Manager Download</b> mod.</li>
                     </ol>
                     <br>
                     When <strong>installing a mod</strong>, MO2 might prompt you with multiple choices:
                     <ul>
-                        <li><strong>Rename</strong> appears when you are trying to install a file with the same name as an existing one. If you are installing, for example, a secondary file necessary for the mod to work, then rename it accordingly with the name drop-down list or by typing the name manually.</li>
-                        <li>If you are updating from an old version of a mod, you should select <strong>Replace</strong>, this will automatically delete all the files from the old version of the mod and replace them with the ones from the new version.</li>
-                        <li><strong>Merge</strong> should only be used when you are sure the mod will not be updated and in situations where a hotfix is uploaded as separate file. Avoid it if you can, for maximum modularity.</li>
+                        <li><strong>Rename</strong> appears when you are trying to install a file with the same name as
+                            an existing one. If you are installing, for example, a secondary file necessary for the mod
+                            to work, then rename it accordingly with the name drop-down list or by typing the name
+                            manually.</li>
+                        <li>If you are updating from an old version of a mod, you should select
+                            <strong>Replace</strong>, this will automatically delete all the files from the old version
+                            of the mod and replace them with the ones from the new version.
+                        </li>
+                        <li><strong>Merge</strong> should only be used when you are sure the mod will not be updated and
+                            in situations where a hotfix is uploaded as separate file. Avoid it if you can, for maximum
+                            modularity.</li>
                     </ul>
                     </p>
                 </div>
@@ -454,7 +451,7 @@
                     <span class="arrowText"></span>
                 </a>
 
-                <a href="#" id="next" rel="next" class="navigationArrow">
+                <a href="https://thebestoftimes.moddinglinked.com/essentials.html#" id="next" rel="next" class="navigationArrow">
                     <span class="arrowText"></span>
                     <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
                 </a>

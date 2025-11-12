@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/Coco/Head Logo.webp">
 
-    <title>Initial Setup | The Best of Times</title>
+    <title>Initial Setup | The Best of Times - Mirelurked</title>
 
     <meta name="keywords" content="
     Mod, Modding, Mods, Guide, Mod Guide, Modding Guide, Resource, Resources,
@@ -66,16 +66,13 @@
                 <img src="./img/UI/Navigation.svg" id="navButton">
             </div>
             <div class="headerTitle">
-                <img src="./img/Coco/Head Logo.webp" alt="Logo" id="logo">
-                <a href="./index.html" id="headerTitle">The Best of Times</a>
+                <img src="./img/Crab/Head Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">Mirelurked - The Best of Times</a>
             </div>
             <div class="guideLinks" id="headerLinks">
-                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
-                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim SE</a>
+                <a href="https://ashtonqlb.github.io/mirelurked-vnv/" target="_blank" rel="nofollow">Fallout: New Vegas</a>
             </div>
         </div>
-
         <div class="sidebar left-sidebar">
             <p class="pageLinks">
                 <a href="./index.html" title="Home">
@@ -98,42 +95,8 @@
                     Tale of Two Wastelands
                 </a>
 
-                <a href="./essentials.html" title="Essential Mods">
-                    Essential Mods
-                </a>
-
-                <a href="./finish.html" title="Final Steps">
-                    Final Steps
-                </a>
-            </p>
-            <hr>
-            <p>
-                <a href="./changelog.html" title="TBoT Changelog">
-                    TBoT Changelog
-                </a>
-
-                <a href="./files/TTW Changelog.7z" target="_blank" title="TTW Changelog">
-                    TTW Changelog
-                </a>
-
-                <a href="https://vivanewvegas.moddinglinked.com/resources.html" target="_blank" title="Resources">
-                    Resources
-                </a>
-
-                <a href="./faq.html" title="FAQ">
-                    FAQ
-                </a>
-
-                <a href="https://vivanewvegas.moddinglinked.com/avoid-tools.html" target="_blank" title="Tools to Avoid">
-                    Tools to Avoid
-                </a>
-
-                <a href="https://vivanewvegas.moddinglinked.com/avoid-mods.html" target="_blank" title="Mods to Avoid">
-                    Mods to Avoid
-                </a>
-
-                <a href="./fo3.html" title="FO3 Mod Guide">
-                    FO3 Mod Guide
+                <a href="./finish.html" title="Setup Finish">
+                    Setup Finish
                 </a>
             </p>
             <p class="sidebar-padder"></p>
@@ -142,99 +105,25 @@
                 <a href="https://discord.gg/S99Ary5eba" title="Discord">
                     Discord
                 </a>
-                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
-                    Donate
-                </a>
                 <a href="https://github.com/ModdingLinked/The-Best-of-Times" title="GitHub">
                     GitHub
                 </a>
             </p>
         </div>
-
-        <div class="card popup" id="donation">
-            <ul>
-                <li>
-                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
-                </li>
-                <li>
-                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
-                </li>
-            </ul>
-        </div>
-
         <div class="content">
 
             <span id="Preparation" class="section">
                 <h2 onclick="location.href='#Preparation'">Preparation</h2>
 
-                <div class="card" id="CPPRedists" title="Installing Redistributables">
+                <div class="card" id="InstallProtontricks" title="Installing Protontricks">
                     <p>
-                    <h3>Installing VC++ Redistributables</h3>
-                    Most engine mods and tools require latest Visual C++ Redistributables to be installed. We will use an all-in-one package that will install all possible versions.
-                    <div class="card-red">
-                        <p>
-                            Failure to have latest versions installed will result in an immediate crash when launching the game or modding tools.
-                            <br>
-                            <br>
-                            Please install the redistributables even if you have them installed already, as they are often outdated.
-                        </p>
-                    </div>
-                    <ol>
-                        <li>Download <a href="https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/" target="_blank">VC++ AIO</a> from TechPowerUp.</li>
-                        <li>Extract the archive and run the included <span class="card-basic">install_all.bat</span> as <b>an administrator</b>.</li>
-                        <li>Restart your PC.</li>
-                    </ol>
-                    </p>
-                </div>
-
-                <div class="card" id="FileExtensions" title="Enabling File Extensions">
-                    <p>
-                    <h3>Enabling File Extensions</h3>
-                    Before we start, it is important to enable file extensions in Windows.
+                    <h3>Installing Protontricks</h3>
                     </p>
                     <p>
-                        By default, File Explorer will not show file extensions (such as .exe, .dll, or .esp). These extensions are very important when going through the guide, so it is highly recommended to enable visible file extensions:
-                    <ol>
-                        <li>Open File Explorer.</li>
-                        <li>Select the <b>View</b> tab at the top.</li>
-                        <li>Enable <strong>File name extensions</strong> in the <b>Show</b> section.</li>
-                        <div class="image-container width-90">
-                            <img class="content-img" src="./img/Others/File Extensions.webp" alt="Show file extensions">
-                            <div class="resize-overlay expand"></div>
-                        </div>
-                    </ol>
-                    </p>
-                </div>
-
-                <div class="card" id="BaseAddressRandomization">
-                    <p>
-                    <h3>Disabling Base Address Randomization</h3>
-                    Base Address Randomization is a security feature in Windows that allows program's starting address to be randomized, which is not the expected behavior in 32-bit programs like Fallout: New Vegas. This <strong>leads to crashes</strong> in a modded game.
-                    <br>
-                    <br>
-                    While the feature should be disabled by default, it is still recommended to sanity check if it is disabled:
-                    <ol>
-                        <li>Open <strong>Windows Security</strong> from your <b>Start Menu</b>.</li>
-                        <li>Click on <b>App & browser control</b> in the left sidebar.</li>
-                        <li>Click on <b>Exploit protection settings</b> under <b>Exploit protection</b>.</li>
-                        <li>Ensure <strong>Force randomization for images (Mandatory ASLR)</strong> is set to <strong>Use default (Off)</strong>.</li>
-
-                        <div class="card-green">
-                            <p>
-                                If you don't want to change the global setting, you can add an exception just for the game:
-                            <ol>
-                                <li>Click on <b>Program settings</b>.</li>
-                                <li>Click on <b>Add program to customize</b>.</li>
-                                <li>Select <b>Add program by name</b>.</li>
-                                <li>Enter <span class="card-basic">FalloutNV.exe</span> in the box and save.</li>
-                                <li>Find the newly created entry on the list and click <b>Edit</b>.</li>
-                                <li>Find <b>Force randomization for images (Mandatory ASLR)</b>.</li>
-                                <li>Check <b>Override system settings</b>, and set the toggle to <b>Off</b>.</li>
-                            </ol>
-                            </p>
-                        </div>
-
-                    </ol>
+                        We will need Protontricks in order to manage and install closed-source Windows components that
+                        are not included by default in your Fallout: New Vegas installation. Installing Protontricks is
+                        as simple as clicking <a href="appstream://com.github.Matoking.protontricks">here</a> and then
+                        clicking <strong>Install</strong>.
                     </p>
                 </div>
             </span>
@@ -242,256 +131,46 @@
             <span id="Installation" class="section">
                 <h2 onclick="location.href='#Installation'">Installation</h2>
 
-                <div class="card" id="InstallLocation">
+                <div class="card" id="Installing the Games">
                     <p>
-                    <h3>Choosing a Location</h3>
-                    <strong>A clean installation</strong> is not only required to get rid of any potential leftover mod files, but also to make sure the game is installed in a safe location. Here is what you need to know when choosing where to install your game:
-                    <br>
-                    <ul>
-                        <li>
-                            <b>Avoid any default Windows folders</b>: This includes but is not limited to <span class="card-basic">C:\Program Files</span>, <span class="card-basic">C:\Program Files x86</span>, your <span class="card-basic">Desktop</span> and your <span class="card-basic">Documents</span> folders.
-                            <br>
-                            This is because users lack write access to Program Files, while Desktop and Documents are often managed by OneDrive. This can cause many issues with the game and any modding tools.
-                            <br>
-                            <br>
-                            An example of a safe location is <span class="card-basic">C:\Games</span>
-                        </li>
-                        <li>
-                            <b>Install on an SSD if possible</b>: Having the game on an SSD will drastically improve loading times and decrease stuttering.
-                        </li>
-                        <li><b>Fallout 3 Installation</b>: Fallout 3 only needs to be installed for running the TTW installer, and can be uninstalled after the installer completes. It still needs to be installed outside of any default Windows folder as outlined above.</li>
-                    </ul>
-                    </p>
-                </div>
+                    <h3>Installing the Games</h3>
 
-                <div class="card" id="Uninstall">
-                    <p>
-                    <h3>Uninstalling the Games</h3>
+                    <div class="card-yellow">
+                        <p>
+                            <b>Where should I install the game?</b>
+                        </p>
+                        <p>
+                            Opposite to Windows, you should <strong>absolutely</strong> install Fallout: New Vegas on
+                            your device's internal storage, in the default location.
+                        </p>
+                    </div>
+                    </p>
 
                     <div class="card-green">
                         <p>
-                            If you never installed the games before, go directly to the next section.
+                            If you haven't yet installed Fallout: New Vegas or Fallout 3, skip directly to the
+                            respective step 2.
                         </p>
                     </div>
+                    <h3>Fallout: New Vegas</h3>
+                    <ol>
+                        <li><a href="steam://uninstall/22380" target="_blank">Click here</a>,
+                            then click
+                            <strong>Uninstall</strong>
+                        </li>
+                        <li><a href="steam://install/22380" target="_blank">Click here</a> to install Fallout: New Vegas
+                        </li>
+                    </ol>
+                    <h3>Fallout 3</h3>
 
-                    As the games are available on Steam, GOG, and Epic Games, there are separate instructions for each version. You obviously only need to follow the directions for the versions you have.
-                    <div class="expander-top colors-steam clickable width-90" onclick="expandCard(this, uninstallSteamExpander)" id="uninstallSteam">
-                        <p>
-                        <h3>Steam</h3>
-                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                        </p>
-                    </div>
-
-                    <div class="expander-bottom colors-steam width-90" id="uninstallSteamExpander">
-
-                        <div class="card-red">
-                            <p>
-                                If you already uninstalled the games, make sure to follow step 4 and 5 to ensure there are no leftovers.
-                            </p>
-                        </div>
-
-                        <h3>Fallout: New Vegas</h3>
-                        <ol>
-                            <li>Open Steam and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                            <li>Right-click on it and select <strong>Manage</strong> -> <strong>Uninstall</strong>.</li>
-                            <li>Navigate to <span class="card-basic">Steam\steamapps\common</span> and, if present, delete the <strong>Fallout New Vegas</strong> folder.</li>
-                            <li>Navigate to <span class="card-basic">Documents\My Games\FalloutNV</span> and delete all INI files inside it.</li>
-                        </ol>
-                        <h3>Fallout 3</h3>
-                        <ol>
-                            <li>Open Steam and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout 3</strong> in the list.</li>
-                            <li>Right-click on it and select <strong>Manage</strong> -> <strong>Uninstall</strong>.</li>
-                            <li>Navigate to <span class="card-basic">Steam\steamapps\common</span> and, if present, delete the <strong>Fallout 3</strong> folder.</li>
-                        </ol>
-                    </div>
-
-                    <div class="expander-top colors-gog clickable width-90" onclick="expandCard(this, uninstallGogExpander)" id="uninstallGog">
-                        <p>
-                        <h3>GOG</h3>
-                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                        </p>
-                    </div>
-
-                    <div class="expander-bottom colors-gog width-90" id="uninstallGogExpander">
-                        <h3>Fallout: New Vegas</h3>
-                        <ol>
-                            <li>Open GOG and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                            <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
-                            <ul>
-                                <li>If you used an offline installer then run the <strong>unins000.exe</strong> file in the game's <b>Root</b> folder.</li>
-                            </ul>
-                            <li>Navigate to <span class="card-basic">Documents\My Games\FalloutNV</span> and delete all INI files inside it.</li>
-                        </ol>
-                        <h3>Fallout 3</h3>
-                        <ol>
-                            <li>Open GOG and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout 3</strong> in the list.</li>
-                            <li>Right-click on it and select <strong>Manage Installation -> Uninstall</strong>.</li>
-                            <ul>
-                                <li>If you used an offline installer then run the <strong>unins000.exe</strong> file in the game's <b>Root</b> folder.</li>
-                            </ul>
-                        </ol>
-                    </div>
-
-                    <div class="expander-top colors-epic clickable width-90" onclick="expandCard(this, uninstallEpicExpander)" id="uninstallEpic">
-                        <p>
-                        <h3>Epic Games</h3>
-                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                        </p>
-                    </div>
-
-                    <div class="expander-bottom colors-epic width-90" id="uninstallEpicExpander">
-
-                        <div class="card-red">
-                            <p>
-                                If you already uninstalled the games, make sure to follow step 4 to ensure there are no leftovers.
-                            </p>
-                        </div>
-
-                        <h3>Fallout: New Vegas</h3>
-                        <ol>
-                            <li>Open the Epic Games Launcher and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                            <li>Click on 3 dots and select uninstall from the menu.</li>
-                            <li>Navigate to <span class="card-basic">Documents\My Games\FalloutNV_Epic</span> and delete all INI files inside it.</li>
-                        </ol>
-                        <h3>Fallout 3</h3>
-                        <ol>
-                            <li>Open the Epic Games Launcher and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout 3</strong> in the list.</li>
-                            <li>Click on 3 dots and select uninstall from the menu.</li>
-                            <li>Navigate to <span class="card-basic">Documents\My Games</span> and delete the <strong>Fallout3</strong> folder.</li>
-                        </ol>
-                    </div>
-                    </p>
-                </div>
-
-                <div class="card" id="Install">
-                    <p>
-                    <h3>Installing the Games</h3>
-                    As the games are available on Steam, GOG, and Epic Games, there are separate instructions for each version. You obviously only need to follow the directions for the versions you have.
-                    <div class="expander-top colors-steam clickable width-90" onclick="expandCard(this, installSteamExpander)" id="installSteam">
-                        <p>
-                        <h3>Steam</h3>
-                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                        </p>
-                    </div>
-
-                    <div class="expander-bottom colors-steam width-90" id="installSteamExpander">
-                        <h3>Creating a new Steam library</h3>
-
-                        <div class="card-red">
-                            <p>
-                                It is strongly recommended to install the games outside of any default Windows folders (such as <span class="card-basic">Program Files (x86)</span>), as the the strict Windows file protections of these folders can break certain mods/tools. Instead, we will use a tool called Steam Library Setup Tool to create a new Steam library folder outside of any default Windows folders.
-                                <br>
-                                <br>
-                                If you already have Steam installed outside of any default windows folders then go directly to step 1 of the next section and install the games to your custom Steam library.
-                            </p>
-                        </div>
-
-                        <ol>
-                            <li>Completely exit out of Steam using Task Manager or System Tray.</li>
-                            <li>Download the <strong>steam_library_setup_tool-3.2.exe</strong> file from <a href="https://github.com/LostDragonist/steam-library-setup-tool/releases" target="_blank">here</a>.</li>
-                            <li>Once downloaded, run the file and add a new entry by clicking <strong>Add Row</strong>.</li>
-                            <li>Type the chosen path under <strong>Path</strong>, e.g. <span class="card-basic">C:\Games\Steam</span></li>
-                            <li>Click <strong>Accept</strong> then <strong>Yes</strong> if prompted to create a new folder.</li>
-                            <li>The tool will ask to exit, select <strong>OK</strong>.</li>
-                            <div class="image-container width-90">
-                                <img class="content-img" src="./img/Others/Steam Library Tool Setup.webp" alt="Steam library setup tool">
-                                <div class="resize-overlay expand"></div>
-                            </div>
-                        </ol>
-                        <h3>Fallout: New Vegas</h3>
-                        <ol>
-                            <li>Open Steam and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
-                            <li>Under <strong>Install to:</strong>, select the library folder created with the tool, which is the second <b>C:\</b> entry if you are installing on the main drive.</li>
-                            <div class="image-container width-90">
-                                <img class="content-img" src="./img/Others/Steam Location Pick.webp" alt="Example Steam install locations">
-                                <div class="resize-overlay expand"></div>
-                            </div>
-                            <li>Select <strong>Next</strong> then wait for the install to finish.</li>
-                        </ol>
-
-                        <div class="card-yellow">
-                            <p>
-                                If you still do not see your new library, restart your PC.
-                            </p>
-                        </div>
-
-                        <h3>Fallout 3</h3>
-                        <ol>
-                            <li>Open Steam and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout 3</strong> in the list and select <strong>Install</strong>.</li>
-                            <li>Under <strong>Install to:</strong>, select the library folder created with the tool, which is the second <b>C:\</b> entry if you are installing on the main drive.</li>
-                            <div class="image-container width-90">
-                                <img class="content-img" src="./img/Others/Steam Location Pick.webp" alt="Example Steam install locations">
-                                <div class="resize-overlay expand"></div>
-                            </div>
-                            <li>Select <strong>Next</strong> then wait for the install to finish.</li>
-                        </ol>
-                    </div>
-
-                    <div class="expander-top colors-gog clickable width-90" onclick="expandCard(this, installGogExpander)" id="installGog">
-                        <div>
-                            <p>
-                            <h3>GOG</h3>
-                            </p>
-                        </div>
-                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                    </div>
-
-                    <div class="expander-bottom colors-gog width-90" id="installGogExpander">
-                        <h3>Fallout: New Vegas</h3>
-                        <ol>
-                            <li>Open GOG and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list and select <strong>Install</strong>.</li>
-                            <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
-                            <ul>
-                                <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <span class="card-basic">Program Files x86</span>).</li>
-                            </ul>
-                        </ol>
-                        <h3>Fallout 3</h3>
-                        <ol>
-                            <li>Open GOG and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout 3</strong> in the list and select <strong>Install</strong>.</li>
-                            <li>Set the <strong>Install to</strong> location to a location of your choice.</li>
-                            <ul>
-                                <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <span class="card-basic">Program Files x86</span>).</li>
-                            </ul>
-                        </ol>
-                    </div>
-
-                    <div class="expander-top colors-epic clickable width-90" onclick="expandCard(this, installEpicExpander)" id="installEpic">
-                        <p>
-                        <h3>Epic Games</h3>
-                        <img class="chevron" style="transform: rotateX(0deg);" src="img/UI/Chevron Down.svg" alt="UI element - Chevron">
-                        </p>
-                    </div>
-
-                    <div class="expander-bottom colors-epic width-90" id="installEpicExpander">
-                        <h3>Fallout: New Vegas</h3>
-                        <ol>
-                            <li>Open the Epic Games Launcher and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout: New Vegas</strong> in the list.</li>
-                            <li>Click on the game to install it.</li>
-                            <ul>
-                                <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <span class="card-basic">Program Files x86</span>).</li>
-                            </ul>
-                        </ol>
-                        <h3>Fallout 3</h3>
-                        <ol>
-                            <li>Open the Epic Games Launcher and go to your <strong>Library</strong>.</li>
-                            <li>Find <strong>Fallout 3</strong> in the list.</li>
-                            <li>Click on the game to install it.</li>
-                            <ul>
-                                <li>It is <strong>required</strong> to install the game outside of any default Windows folders (e.g., <span class="card-basic">Program Files x86</span>).</li>
-                            </ul>
-                        </ol>
-                    </div>
+                    <ol>
+                        <li><a href="steam://uninstall/22370" target="_blank">Click here</a>,
+                            then click
+                            <strong>Uninstall</strong>
+                        </li>
+                        <li><a href="steam://install/22370" target="_blank">Click here</a> to install Fallout 3.
+                        </li>
+                    </ol>
                     </p>
                 </div>
             </span>
@@ -502,72 +181,80 @@
                 <div class="card" id="Terminology">
                     <p>
                     <h3>Key Terminology</h3>
-                    Now that the game is installed, there are two folders from it that will be referred to in the guide often:
+                    Now that the game is installed, there are two folders from it that will be referred to in the guide
+                    often:
                     <ul>
                         <li><strong>Root</strong> folder: Where the game is installed.</li>
                         <ul>
-                            <li>For Steam:
-                                <div class="card-basic">
-                                    <p>Steam\steamapps\common\Fallout New Vegas</p>
-                                </div>
-                            </li>
-                            <li>For GOG:
-                                <div class="card-basic">
-                                    <p>GOG Galaxy\Games\Fallout New Vegas</p>
-                                </div> (unless you manually changed the installation path).
-                            </li>
-                            <li>For Epic Games:
-                                <div class="card-basic">
-                                    <p>Epic Games\FalloutNewVegas\Fallout New Vegas English</p>
-                                </div> (unless you manually changed the installation path).
-                            </li>
+                            <div class="card-basic">
+                                <p>~/.steam/steam/steamapps/common/Fallout New Vegas</p>
+                            </div>
                         </ul>
                     </ul>
 
                     <ul>
                         <li><strong>Data</strong> folder: Where all of the game's assets are located.</li>
                         <ul>
-                            <li>For Steam:
-                                <div class="card-basic">
-                                    <p>Steam\steamapps\common\Fallout New Vegas\Data</p>
-                                </div>
-                            </li>
-                            <li>For GOG:
-                                <div class="card-basic">
-                                    <p>GOG Galaxy\Games\Fallout New Vegas\Data</p>
-                                </div>
-                            </li>
-                            <li>For Epic Games:
-                                <div class="card-basic">
-                                    <p>Epic Games\FalloutNewVegas\Fallout New Vegas English\Data</p>
-                                </div>
-                            </li>
+                            <div class="card-basic">
+                                <p>~/.steam/steam/steamapps/common/Fallout New Vegas/Data</p>
+                            </div>
+                        </ul>
+                    </ul>
+
+                    <ul>
+                        <li><strong>Prefix</strong> folder: Where all of the game's Windows compatibility files are
+                            located.
+                        </li>
+                        <ul>
+                            <div class="card-basic">
+                                <p>~/.steam/steam/steamapps/compatdata/22380</p>
+                            </div>
                         </ul>
                     </ul>
                     </p>
                 </div>
                 <div class="card" id="GeneratingINIs" title="Generating INIs">
                     <p>
-                    <h3>Generating Fresh INI Files</h3>
-                    <h3>Fallout: New Vegas</h3>
+                    <h3>Generating Fresh Configuration Files</h3>
+
                     <ol>
-                        <li>Run the game from Steam/GOG Galaxy, or through FalloutNVLauncher.exe in the game files if you are using an offline copy.</li>
+                        <li><a href="steam://rungameid/22380" target="_blank">Click here</a> to run the game from Steam
+                        </li>
+                        <li>Allow Steam to generate a Vulkan shader cache. This will take a few minutes.</li>
                         <li>Click OK to both pop-ups that say <b>Detecting Video Hardware</b>.</li>
                         <ul>
-                            <li>If there aren't any pop-ups, navigate to <span class="card-basic">Documents\My Games\FalloutNV</span> and delete all INI files, then retry.</li>
+                            <li>If there aren't any pop-ups, try re-installing the game, and then try again.</li>
                         </ul>
                         <li>Click <b>OK</b> then <b>Exit</b>.</li>
                     </ol>
-                    <h3>Fallout 3</h3>
-                    <ol>
-                        <li>Run the game from Steam/GOG Galaxy, or through FalloutLauncher.exe in the game files if you are using an offline copy.</li>
-                        <li>Click OK to both pop-ups that say <b>Detecting Video Hardware</b>.</li>
-                        <ul>
-                            <li>If there aren't any pop-ups, navigate to <span class="card-basic">Documents\My Games\Fallout3</span> and delete all INI files, then retry.</li>
-                        </ul>
-                        <li>Exit the launcher.</li>
-                    </ol>
                     </p>
+                </div>
+
+                <div class="card" id="CPPRedists" title="Installing Visual C++ Redistributables">
+                    <p>
+                    </p>
+                    <h3>Installing Visual C++ Redistributables</h3>
+                    Yvile's Crash Logger, a core mod in this guide, requires the latest Visual C++ Redistributables to
+                    be installed. We will use Protontricks to install it.
+                    <div class="card-red">
+                        <p>
+                            Failure to have the Visual C++ redistributables installed will result in an immediate crash
+                            when launching the game or modding tools.
+                        </p>
+                    </div>
+                    <ol>
+                        <li>Open Protontricks</li>
+                        <li>Click <strong>Fallout New Vegas</strong>, then click <strong>OK</strong></li>
+                        <li>Click <strong>OK</strong></li>
+                        <li>Click <strong>Install a Windows DLL or component</strong>, then click <strong>OK</strong>
+                        </li>
+                        <li>Scroll down until you find the package named <span class="card-basic">vcrun2022</span>. This
+                            is the latest version of the Visual C++ Redistributables. Tick the box next to it and then
+                            click <strong>OK</strong> </li>
+                        <li>Wait. This process may take a while.</li>
+                        <li>Once installation has finished, keep clicking <strong>Cancel</strong> until the application
+                            quits.</li>
+                    </ol>
                 </div>
             </span>
 

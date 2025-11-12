@@ -67,13 +67,11 @@
                 <img src="./img/UI/Navigation.svg" id="navButton">
             </div>
             <div class="headerTitle">
-                <img src="./img/Coco/Head Logo.webp" alt="Logo" id="logo">
-                <a href="./index.html" id="headerTitle">The Best of Times</a>
+                <img src="./img/Crab/Head Logo.webp" alt="Logo" id="logo">
+                <a href="./index.html" id="headerTitle">The Best of Times - Mirelurked!</a>
             </div>
             <div class="guideLinks" id="headerLinks">
                 <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
-                <a href="https://themidnightride.moddinglinked.com" target="_blank" rel="nofollow">Fallout 4</a>
-                <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim SE</a>
             </div>
         </div>
         <div class="sidebar left-sidebar">
@@ -98,42 +96,8 @@
                     Tale of Two Wastelands
                 </a>
 
-                <a href="./essentials.html" title="Essential Mods">
-                    Essential Mods
-                </a>
-
                 <a href="./finish.html" title="Final Steps">
-                    Final Steps
-                </a>
-            </p>
-            <hr>
-            <p>
-                <a href="./changelog.html" title="TBoT Changelog">
-                    TBoT Changelog
-                </a>
-
-                <a href="./files/TTW Changelog.7z" target="_blank" title="TTW Changelog">
-                    TTW Changelog
-                </a>
-
-                <a href="https://vivanewvegas.moddinglinked.com/resources.html" target="_blank" title="Resources">
-                    Resources
-                </a>
-
-                <a href="./faq.html" title="FAQ">
-                    FAQ
-                </a>
-
-                <a href="https://vivanewvegas.moddinglinked.com/avoid-tools.html" target="_blank" title="Tools to Avoid">
-                    Tools to Avoid
-                </a>
-
-                <a href="https://vivanewvegas.moddinglinked.com/avoid-mods.html" target="_blank" title="Mods to Avoid">
-                    Mods to Avoid
-                </a>
-
-                <a href="./fo3.html" title="FO3 Mod Guide">
-                    FO3 Mod Guide
+                    Setup Finish
                 </a>
             </p>
             <p class="sidebar-padder"></p>
@@ -142,26 +106,11 @@
                 <a href="https://discord.gg/S99Ary5eba" title="Discord">
                     Discord
                 </a>
-                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
-                    Donate
-                </a>
                 <a href="https://github.com/ModdingLinked/The-Best-of-Times" title="GitHub">
                     GitHub
                 </a>
             </p>
         </div>
-
-        <div class="card popup" id="donation">
-            <ul>
-                <li>
-                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
-                </li>
-                <li>
-                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
-                </li>
-            </ul>
-        </div>
-
         <div class="content">
 
             <span id="Installation" class="section">
@@ -171,26 +120,27 @@
                     <p>
                     <h3>Installing Tale of Two Wastelands</h3>
                     <ol>
-                        <li>Download the <a href="https://mod.pub/ttw/133-tale-of-two-wastelands" target="_blank">Tale of Two Wastelands Installer</a> and extract the contents of the archive anywhere outside of the default Windows folders.</li>
+                        <li>Download the <a href="https://mod.pub/ttw/133-tale-of-two-wastelands" target="_blank">Tale of Two Wastelands Installer</a> and extract the contents to your Downloads folder.</li>
+                        <li>Download the <a href="https://github.com/SulfurNitride/TTW_Linux_Installer/releases/latest" target="_blank">Universal MPI Phraser</a>. Extract the contents to the already existing Tale of Two Wastelands Installer folder.</li>
                         <li>Open Mod Organizer 2, select the <img class="mo2-icon" src="./img/MO2/Folders.webp" alt="MO2 Folders"> button at the top and select <strong>Open Mods folder</strong>.</li>
-                        <li>Here, <strong>create a folder</strong> named <b>Tale of Two Wastelands</b> and then <strong>copy its path</strong>.</li>
+                        <li>Here, <strong>create a folder</strong> named <b>Tale of Two Wastelands</b>.</li>
                         <li>Close MO2.</li>
-                        <li>Back in the TTW Installer folder, right-click the <strong>TTW Install.exe</strong> and select <b>Run As Administrator</b>.</li>
-                        <li>In the installer, verify that the automatically set file paths for both your Fallout 3 and Fallout: New Vegas installations are correct.</li>
-                        <li><strong>Paste the path</strong> you copied in step 3 in the last text field.</li>
+                        <li>Navigate to your TTW Installer folder. Double click the file named <span class="card-basic">ttw_linux_gui</span>. This will launch the Linux TTW installer.</li>
+                        <li>Click <strong>Browse.</strong>. Select the file marked <span class="card-basic">Tale of Two Wastelands 3.4.mpi</span></li>
+                        <li>Locate your installed copies of Fallout 3, Fallout: New Vegas & Mod Organizer 2. The <strong>Output</strong> path box should point to the <strong>Tale of Two Wastelands</strong> mod directory you created earlier.</li>
                         <div class="image-container width-70">
                             <img class="content-img" src="./img/Others/Install TTW.webp" alt="TTW installation paths">
                             <div class="resize-overlay expand"></div>
                         </div>
-                        <li>Ensure your paths look similar to the example above, then <strong>Install</strong>.</li>
+                        <li>Ensure your paths look similar to the example above, then click <strong>Install</strong>.</li>
                     </ol>
 
                     <div class="card-yellow">
                         <p>
-                            The installation might take a long time as the audio encoding section is very CPU-intensive. It takes about 40 minutes on a Ryzen 5 5600x but could take several hours or even longer on a slower CPU.
+                            The installation might take a long time as the audio encoding section is very CPU-intensive. It takes <b>~90 minutes</b> on a Steam Deck LCD.
                             <br>
                             <br>
-                            It is recommended to close any other CPU-intensive application during this time to avoid slowdowns.
+                            It is recommended to keep your handheld device connected to AC power and close any other applications during this time to avoid accidental shutdown and data corruption.
                             <br>
                             <br>
                             If you run into any errors during the installation, check the solutions listed in the <a href="./faq.html" target="_blank">FAQ</a>.
