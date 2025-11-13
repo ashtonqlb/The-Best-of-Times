@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/intro.html</loc>
-		<priority>0.90</priority>
-		<lastmod>2025-05-06</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/ttw.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2025-08-07</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/mo2.html</loc>
-		<priority>0.70</priority>
-		<lastmod>2025-05-06</lastmod>
-	</url>
-	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/mo2.html</loc>
+		<loc>https://https://ashtonqlb.github.io/mirelurked-tbot/</loc>
 		<priority>0.50</priority>
-		<lastmod>2025-08-08</lastmod>
+		<lastmod>2025-11-13</lastmod>
 	</url>
 	<url>
-		<loc>https://thebestoftimes.moddinglinked.com/setup.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-05-06</lastmod>
+		<loc>https://https://ashtonqlb.github.io/mirelurked-tbot//ttw.html</loc>
+		<priority>0.17</priority>
+		<lastmod>2025-11-12</lastmod>
+	</url>
+	<url>
+		<loc>https://https://ashtonqlb.github.io/mirelurked-tbot//setup.html</loc>
+		<priority>0.17</priority>
+		<lastmod>2025-11-13</lastmod>
+	</url>
+	<url>
+		<loc>https://https://ashtonqlb.github.io/mirelurked-tbot//mo2.html</loc>
+		<priority>0.17</priority>
+		<lastmod>2025-11-13</lastmod>
+	</url>
+	<url>
+		<loc>https://https://ashtonqlb.github.io/mirelurked-tbot//intro.html</loc>
+		<priority>0.17</priority>
+		<lastmod>2025-11-13</lastmod>
+	</url>
+	<url>
+		<loc>https://https://ashtonqlb.github.io/mirelurked-tbot//finish.html</loc>
+		<priority>0.17</priority>
+		<lastmod>2025-11-13</lastmod>
+	</url>
+	<url>
+		<loc>https://https://ashtonqlb.github.io/mirelurked-tbot//changelog.html</loc>
+		<priority>0.17</priority>
+		<lastmod>2025-11-12</lastmod>
 	</url>
 </urlset>
